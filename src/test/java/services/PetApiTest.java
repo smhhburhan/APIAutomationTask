@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class PetApiTest<baseURI> {
+public class PetApiTest {
 
     static String baseURI = "https://petstore.swagger.io/v2/";
     static long petId;
