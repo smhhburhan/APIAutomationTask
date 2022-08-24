@@ -11,7 +11,7 @@ public class PetApiTest {
     static long petId;
 
     @Test(priority = 1)
-    public static void POSTPet() {
+    public static void POST_Pet() {
 
         String response = given()
                 .header("Content-Type", "application/json")
@@ -35,7 +35,7 @@ public class PetApiTest {
     }
 
     @Test(priority = 2)
-    public void GETPetById() {
+    public void GET_PetById() {
 
         String response = given()
                 .header("Content-Type", "application/json")
@@ -54,7 +54,7 @@ public class PetApiTest {
     }
 
     @Test(priority = 3)
-    public static void PUTPet() {
+    public static void PUT_Pet() {
 
         String response = given()
                 .header("Content-Type", "application/json")
@@ -77,7 +77,7 @@ public class PetApiTest {
     }
 
     @Test(priority = 4)
-    public void GETPetById2() {
+    public void GET_PetById2() {
 
         String response = given()
                 .header("Content-Type", "application/json")
@@ -96,7 +96,7 @@ public class PetApiTest {
     }
 
     @Test(priority = 5)
-    public void DELETEPet() {
+    public void DELETE_Pet() {
 
         String response = given()
                 .header("Content-Type", "application/json")
@@ -115,7 +115,7 @@ public class PetApiTest {
     }
 
     @Test(priority = 6)
-    public void GETPetById3() {
+    public void GET_PetById3() {
 
         //String response =
         given()
@@ -126,7 +126,7 @@ public class PetApiTest {
                 .when()
                 .get("/pet/" + petId)
                 .then()
-                .assertThat()
+                //.assertThat()
                 .log()
                 .all()
                 .statusCode(404);
