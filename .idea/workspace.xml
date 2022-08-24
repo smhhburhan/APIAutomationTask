@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c05ee64e-3b4d-4f11-a932-7eda05f02c70" name="Changes" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/body/PutPet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/services/PetApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/services/PetApiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,15 +36,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/JimmyFloyd/Desktop/InsiderTestTask/InsiderSeleniumJava"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/JimmyFloyd/Desktop/InsiderTestTask/InsiderSeleniumJava&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.PetApiTest">
     <configuration name="PetApiTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="InsiderAPIAutomation" />
@@ -79,24 +81,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PetApiTest.PostPetNegative" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="InsiderAPIAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="services" />
-      <option name="MAIN_CLASS_NAME" value="services.PetApiTest" />
-      <option name="METHOD_NAME" value="PostPetNegative" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PetApiTest.PostPetPositive" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="InsiderAPIAutomation" />
       <extension name="coverage">
@@ -108,6 +92,24 @@
       <option name="PACKAGE_NAME" value="services" />
       <option name="MAIN_CLASS_NAME" value="services.PetApiTest" />
       <option name="METHOD_NAME" value="PostPetPositive" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetApiTest.PutPet" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="InsiderAPIAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.PetApiTest" />
+      <option name="METHOD_NAME" value="PutPet" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -136,10 +138,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.PetApiTest" />
+        <item itemvalue="TestNG.PetApiTest.PutPet" />
         <item itemvalue="TestNG.PetApiTest.getPetById" />
         <item itemvalue="TestNG.PetApiTest.PostPet" />
         <item itemvalue="TestNG.PetApiTest.PostPetPositive" />
-        <item itemvalue="TestNG.PetApiTest.PostPetNegative" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661327128977</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1661327192430</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661327192430</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,7 +176,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
