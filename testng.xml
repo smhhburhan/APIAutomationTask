@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="test">
+        <classes>
+            <class name="services.PostPetIdTest">
+                <methods>
+                    <include name="POSTPet"/>
+                </methods>
+            </class>
+            <class name="services.GetPetByIdTest">
+                <methods>
+                    <include name="GETPetById"/>
+                </methods>
+            </class>
+            <class name="services.PutPetByIdTest">
+                <methods>
+                    <include name="PUTPet"/>
+                </methods>
+            </class>
+            <class name="services.GetPetById2Test">
+                <methods>
+                    <include name="GETPetById2"/>
+                </methods>
+            </class>
+            <class name="services.DeletePetTest">
+                <methods>
+                    <include name="DELETEPet"/>
+                </methods>
+            </class>
+            <class name="services.GetPetById3Test">
+                <methods>
+                    <include name="GETPetById3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
