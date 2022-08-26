@@ -1,8 +1,8 @@
 package body;
 
-public class PostPet {
+public class PutPet {
 
-    public static String PostPetBody() {
+    public static String PutPetBody() {
 
         return "{\n" +
                 "  \"id\": 0,\n" +
@@ -10,7 +10,7 @@ public class PostPet {
                 "    \"id\": 0,\n" +
                 "    \"name\": \"string\"\n" +
                 "  },\n" +
-                "  \"name\": \"doggie\",\n" +
+                "  \"name\": \"string\",\n" +
                 "  \"photoUrls\": [\n" +
                 "    \"string\"\n" +
                 "  ],\n" +
@@ -20,7 +20,7 @@ public class PostPet {
                 "      \"name\": \"string\"\n" +
                 "    }\n" +
                 "  ],\n" +
-                "  \"status\": \"available\"\n" +
+                "  \"status\": \"string\"\n" +
                 "}";
 
     }

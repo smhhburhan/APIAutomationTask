@@ -5,19 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c05ee64e-3b4d-4f11-a932-7eda05f02c70" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/services/DeletePetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/services/GetPetById2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/services/GetPetById3Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/services/GetPetByIdTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/services/PutPetByIdTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/body/PutPet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/services/DeletePetNegativeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/services/PutPetNegativeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/services/PetApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/services/PostPetIdTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/body/PostPet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/body/PostPet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/services/DeletePetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/services/DeletePetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/services/GetPetById2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/services/GetPetById2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/services/GetPetById3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/services/GetPetByIdNegativeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/services/GetPetByIdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/services/GetPetByIdTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/services/PostPetIdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/services/PostPetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/services/PutPetByIdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/services/PutPetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,17 +46,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/JimmyFloyd/Desktop/InsiderTestTask/InsiderAPIAutomationTask"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/JimmyFloyd/Desktop/InsiderTestTask/InsiderAPIAutomationTask&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.C:/Users/JimmyFloyd/Desktop/InsiderTestTask/InsiderAPIAutomation/testng.xml">
-    <configuration name="C:/Users/JimmyFloyd/Desktop/InsiderTestTask/InsiderAPIAutomation/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager">
+    <configuration name="C:/Users/JimmyFloyd/Desktop/InsiderTestTask/InsiderAPIAutomationTask/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="InsiderAPIAutomationTask" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
@@ -66,84 +66,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostPetIdTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="InsiderAPIAutomationTask" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="services" />
-      <option name="MAIN_CLASS_NAME" value="services.PostPetIdTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostPetIdTest.PostPet" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="InsiderAPIAutomationTask" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="services" />
-      <option name="MAIN_CLASS_NAME" value="services.PostPetIdTest" />
-      <option name="METHOD_NAME" value="PostPet" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostPetIdTest.PutPet" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="InsiderAPIAutomationTask" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="services" />
-      <option name="MAIN_CLASS_NAME" value="services.PostPetIdTest" />
-      <option name="METHOD_NAME" value="PutPet" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostPetIdTest.getPetById" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="InsiderAPIAutomationTask" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="services" />
-      <option name="MAIN_CLASS_NAME" value="services.PostPetIdTest" />
-      <option name="METHOD_NAME" value="getPetById" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/JimmyFloyd/Desktop/InsiderTestTask/InsiderAPIAutomation/testng.xml" />
-        <item itemvalue="TestNG.PostPetIdTest" />
-        <item itemvalue="TestNG.PostPetIdTest.PutPet" />
-        <item itemvalue="TestNG.PostPetIdTest.getPetById" />
-        <item itemvalue="TestNG.PostPetIdTest.PostPet" />
+        <item itemvalue="TestNG.C:/Users/JimmyFloyd/Desktop/InsiderTestTask/InsiderAPIAutomationTask/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661329916068</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit">
+      <created>1661486825027</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661486825027</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

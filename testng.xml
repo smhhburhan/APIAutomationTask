@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="Insider API Test Suite">
     <test name="test">
         <classes>
-            <class name="services.PostPetIdTest">
+            <class name="services.PostPetTest">
                 <methods>
                     <include name="POSTPet"/>
                 </methods>
@@ -13,7 +13,7 @@
                     <include name="GETPetById"/>
                 </methods>
             </class>
-            <class name="services.PutPetByIdTest">
+            <class name="services.PutPetTest">
                 <methods>
                     <include name="PUTPet"/>
                 </methods>
@@ -28,9 +28,19 @@
                     <include name="DELETEPet"/>
                 </methods>
             </class>
-            <class name="services.GetPetById3Test">
+            <class name="services.GetPetByIdNegativeTest">
                 <methods>
-                    <include name="GETPetById3"/>
+                    <include name="GETPetByIdNegative"/>
+                </methods>
+            </class>
+            <class name="services.PutPetNegativeTest">
+                <methods>
+                    <include name="PUTPetNegative"/>
+                </methods>
+            </class>
+            <class name="services.DeletePetNegativeTest">
+                <methods>
+                    <include name="DELETEPetNegative"/>
                 </methods>
             </class>
         </classes>

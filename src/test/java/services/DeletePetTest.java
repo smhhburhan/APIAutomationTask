@@ -1,19 +1,16 @@
 package services;
 
-
 import org.testng.annotations.Test;
-
 import static io.restassured.RestAssured.given;
-import static services.PostPetIdTest.petId;
+import static services.PostPetTest.baseURI;
+import static services.PostPetTest.petId;
 
-public class DeletePetTest  {
+public class DeletePetTest {
 
-    String baseURI = "https://petstore.swagger.io/v2/";
+    //String baseURI = "https://petstore.swagger.io/v2/";
 
     @Test
     public void DELETEPet() {
-
-
 
         String response = given()
                 .header("Content-Type", "application/json")
@@ -30,4 +27,5 @@ public class DeletePetTest  {
         System.out.println("----------" + "\n" + "Response of DELETE \\pet\\petId" + "\n" + "----------" + "\n" + response + "\n" + "----------");
 
     }
+
 }

@@ -5,9 +5,9 @@ import io.restassured.path.json.JsonPath;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 
-public class PostPetIdTest {
+public class PostPetTest {
 
-    String baseURI = "https://petstore.swagger.io/v2/";
+    static String baseURI = "https://petstore.swagger.io/v2/";
     static long petId;
 
     @Test

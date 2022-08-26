@@ -1,20 +1,16 @@
 package services;
 
-
 import org.testng.annotations.Test;
-
 import static io.restassured.RestAssured.given;
-import static services.PostPetIdTest.petId;
+import static services.PostPetTest.baseURI;
+import static services.PostPetTest.petId;
 
-public class GetPetById2Test  {
+public class GetPetById2Test { //After PUT check
 
-    String baseURI = "https://petstore.swagger.io/v2/";
-
+    //String baseURI = "https://petstore.swagger.io/v2/";
 
     @Test
     public void GETPetById2() {
-
-
 
         String response = given()
                 .header("Content-Type", "application/json")
@@ -31,4 +27,5 @@ public class GetPetById2Test  {
         System.out.println("----------" + "\n" + "After PUT \\pet Method, response of GET \\pet\\petId with last Pet id " + "\n" + "----------" + "\n" + response + "\n" + "----------");
 
     }
+
 }
