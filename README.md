@@ -1,4 +1,4 @@
-# InsiderAPIAutomationTask
+# APIAutomationTask
 
 # Requirments&Conditions
 - “pet” endpoints from https://petstore.swagger.io/
